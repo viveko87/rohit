@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A little love-filled surprise for one very special month together."
+    />
+    <title>One Month Together ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="awaiting-experience">
+    <section class="welcome-screen" id="welcome-screen" aria-labelledby="welcome-title">
+      <div class="welcome-screen__glow welcome-screen__glow--one" aria-hidden="true"></div>
+      <div class="welcome-screen__glow welcome-screen__glow--two" aria-hidden="true"></div>
+      <div class="welcome-screen__stars" aria-hidden="true"></div>
+      <span class="welcome-screen__decoration welcome-screen__decoration--heart-one" aria-hidden="true">❤️</span>
+      <span class="welcome-screen__decoration welcome-screen__decoration--heart-two" aria-hidden="true">💕</span>
+      <span class="welcome-screen__decoration welcome-screen__decoration--sparkle-one" aria-hidden="true">✨</span>
+      <span class="welcome-screen__decoration welcome-screen__decoration--sparkle-two" aria-hidden="true">✦</span>
+      <span class="welcome-screen__decoration welcome-screen__decoration--rose" aria-hidden="true">🌹</span>
+      <span class="welcome-screen__decoration welcome-screen__decoration--butterfly" aria-hidden="true">🦋</span>
+      <div class="welcome-screen__content">
+        <p class="welcome-screen__eyebrow">A LITTLE SURPRISE FOR YOU... ✨</p>
+        <h1 class="welcome-screen__title" id="welcome-title">Before You Enter My Heart... ❤️</h1>
+        <p class="welcome-screen__message">I made something special for you.</p>
+        <button class="welcome-screen__button" id="enter-button" type="button">
+          Open My Heart ❤️
+          <span class="welcome-screen__button-sparkle" aria-hidden="true">✨</span>
+        </button>
+      </div>
+      <div class="welcome-screen__particles" aria-hidden="true"></div>
+    </section>
+    <audio id="backgroundMusic" preload="auto"></audio>
+    <audio id="soundtrackAudio" preload="none"></audio>
+    <main id="website-content" aria-hidden="true">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero__glow hero__glow--left" aria-hidden="true"></div>
+        <div class="hero__glow hero__glow--right" aria-hidden="true"></div>
+
+        <span class="decoration decoration--heart decoration--heart-one" aria-hidden="true">♡</span>
+        <span class="decoration decoration--heart decoration--heart-two" aria-hidden="true">♥</span>
+        <span class="decoration decoration--sparkle decoration--sparkle-one" aria-hidden="true">✦</span>
+        <span class="decoration decoration--sparkle decoration--sparkle-two" aria-hidden="true">✧</span>
+        <span class="decoration decoration--rose decoration--rose-one" aria-hidden="true">🌹</span>
+        <span class="decoration decoration--rose decoration--rose-two" aria-hidden="true">🌹</span>
+        <span class="decoration decoration--bow" aria-hidden="true">🎀</span>
+        <span class="decoration decoration--teddy" aria-hidden="true">🧸</span>
+
+        <div class="hero__card">
+          <p class="eyebrow"><span aria-hidden="true">✦</span> A little note for you <span aria-hidden="true">✦</span></p>
+          <h1 id="hero-title">Hey Beautiful... <span aria-hidden="true">❤️</span></h1>
+          <p class="hero__intro">I made something special for you...</p>
+          <p class="hero__lead">Because today is not just another day...</p>
+
+          <div class="anniversary" aria-label="Our 1 Month Together">
+            <span class="anniversary__heart" aria-hidden="true">❤️</span>
+            <p>Our 1 Month Together <span aria-hidden="true">❤️</span></p>
+            <span class="anniversary__heart" aria-hidden="true">❤️</span>
+          </div>
+
+          <button class="heart-button" type="button" id="open-heart">
+            <span>Open My Heart</span>
+            <span aria-hidden="true">💜</span>
+          </button>
+          <nav class="chapter-nav chapter-nav--hero" aria-label="Chapter navigation">
+            <span class="chapter-nav__sparkle" aria-hidden="true">✨</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="one-month">
+              Begin Our Story ❤️
+            </button>
+          </nav>
+        </div>
+
+        <div class="celebration-burst" aria-hidden="true"></div>
+        <span class="hero__bottom-sparkle" aria-hidden="true">✨</span>
+      </section>
+
+      <section class="anniversary-section" id="one-month" aria-labelledby="anniversary-title">
+        <div class="anniversary-section__glow anniversary-section__glow--one" aria-hidden="true"></div>
+        <div class="anniversary-section__glow anniversary-section__glow--two" aria-hidden="true"></div>
+        <span class="anniversary-decoration anniversary-decoration--heart-one" aria-hidden="true">♡</span>
+        <span class="anniversary-decoration anniversary-decoration--heart-two" aria-hidden="true">♥</span>
+        <span class="anniversary-decoration anniversary-decoration--sparkle-one" aria-hidden="true">✧</span>
+        <span class="anniversary-decoration anniversary-decoration--sparkle-two" aria-hidden="true">✦</span>
+        <span class="anniversary-decoration anniversary-decoration--rose-one" aria-hidden="true">🌹</span>
+        <span class="anniversary-decoration anniversary-decoration--rose-two" aria-hidden="true">🌹</span>
+        <span class="anniversary-decoration anniversary-decoration--teddy" aria-hidden="true">🧸</span>
+        <div class="anniversary-section__content">
+          <p class="anniversary-section__eyebrow">A little celebration of us</p>
+          <h2 class="anniversary-section__title" id="anniversary-title">One Month of Us <span aria-hidden="true">❤️</span></h2>
+          <p class="anniversary-section__message">
+            Can you believe it?<br />
+            It's already been one beautiful month since we became US.
+          </p>
+
+          <div class="counter-grid" role="timer" aria-label="Time since relationship start" aria-live="off">
+            <div class="counter-card">
+              <span class="counter-card__icon" aria-hidden="true">❤️</span>
+              <span class="counter-card__value" id="counter-days">--</span>
+              <span class="counter-card__label">Days</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-card__icon" aria-hidden="true">💜</span>
+              <span class="counter-card__value" id="counter-hours">--</span>
+              <span class="counter-card__label">Hours</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-card__icon" aria-hidden="true">🌸</span>
+              <span class="counter-card__value" id="counter-minutes">--</span>
+              <span class="counter-card__label">Minutes</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-card__icon" aria-hidden="true">✨</span>
+              <span class="counter-card__value" id="counter-seconds">--</span>
+              <span class="counter-card__label">Seconds</span>
+            </div>
+          </div>
+
+          <p class="anniversary-section__memory">
+            Every day with you became a little memory that I never want to forget. ❤️
+          </p>
+          <p class="anniversary-section__milestone">
+            30 days...<br />
+            720 hours...<br />
+            43,200 minutes...<br />
+            and countless little moments with you. 🥺❤️
+          </p>
+          <nav class="chapter-nav" aria-label="Chapter navigation">
+            <button class="chapter-nav__button chapter-nav__button--previous" type="button" data-chapter-target="hero">← Back To Beginning</button>
+            <span class="chapter-nav__heart" aria-hidden="true">💕</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="memories">Continue Our Story →</button>
+          </nav>
+        </div>
+        <div class="anniversary-hearts" aria-hidden="true"></div>
+      </section>
+
+      <section class="memories-section" id="memories" aria-labelledby="memories-title">
+        <div class="memories-section__glow memories-section__glow--one" aria-hidden="true"></div>
+        <div class="memories-section__glow memories-section__glow--two" aria-hidden="true"></div>
+        <span class="memories-decoration memories-decoration--heart-one" aria-hidden="true">♡</span>
+        <span class="memories-decoration memories-decoration--heart-two" aria-hidden="true">♥</span>
+        <span class="memories-decoration memories-decoration--sparkle-one" aria-hidden="true">✧</span>
+        <span class="memories-decoration memories-decoration--sparkle-two" aria-hidden="true">✦</span>
+        <span class="memories-decoration memories-decoration--rose-one" aria-hidden="true">🌹</span>
+        <span class="memories-decoration memories-decoration--rose-two" aria-hidden="true">🌹</span>
+
+        <div class="memories-section__content">
+          <p class="memories-section__eyebrow">Little pieces of forever</p>
+          <h2 class="memories-section__title" id="memories-title">Our Little Memories <span aria-hidden="true">❤️</span></h2>
+          <p class="memories-section__subtitle">
+            Some moments become memories...<br />
+            and some memories become forever. 🥺
+          </p>
+          <div class="memory-grid" id="memory-grid" aria-label="Our memory gallery"></div>
+          <nav class="chapter-nav" aria-label="Chapter navigation">
+            <button class="chapter-nav__button chapter-nav__button--previous" type="button" data-chapter-target="one-month">← One Month Together</button>
+            <span class="chapter-nav__heart" aria-hidden="true">💕</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="love">Next Memory 💕 →</button>
+          </nav>
+        </div>
+        <div class="memories-hearts" aria-hidden="true"></div>
+      </section>
+
+      <div
+        class="memory-lightbox"
+        id="memory-lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="lightbox-title"
+        aria-describedby="lightbox-description"
+        aria-hidden="true"
+      >
+        <button class="memory-lightbox__close" type="button" aria-label="Close memory">✕</button>
+        <button class="memory-lightbox__nav memory-lightbox__nav--previous" type="button" aria-label="Previous memory">‹</button>
+        <figure class="memory-lightbox__figure">
+          <img class="memory-lightbox__image" src="" alt="" />
+          <figcaption class="memory-lightbox__caption">
+            <h2 id="lightbox-title"></h2>
+            <p id="lightbox-description"></p>
+          </figcaption>
+        </figure>
+        <button class="memory-lightbox__nav memory-lightbox__nav--next" type="button" aria-label="Next memory">›</button>
+      </div>
+
+      <section class="love-section" id="love" aria-labelledby="love-title">
+        <div class="love-section__glow love-section__glow--one" aria-hidden="true"></div>
+        <div class="love-section__glow love-section__glow--two" aria-hidden="true"></div>
+        <span class="love-decoration love-decoration--heart-one" aria-hidden="true">♡</span>
+        <span class="love-decoration love-decoration--heart-two" aria-hidden="true">♥</span>
+        <span class="love-decoration love-decoration--sparkle-one" aria-hidden="true">✧</span>
+        <span class="love-decoration love-decoration--sparkle-two" aria-hidden="true">✦</span>
+        <span class="love-decoration love-decoration--flower" aria-hidden="true">🌸</span>
+        <span class="love-decoration love-decoration--rose" aria-hidden="true">🌹</span>
+
+        <div class="love-section__content">
+          <p class="love-section__eyebrow">A FEW THINGS I LOVE ABOUT YOU</p>
+          <h2 class="love-section__title" id="love-title">Things I Love About You <span aria-hidden="true">❤️</span></h2>
+          <p class="love-section__subtitle">
+            I could write a thousand reasons...<br />
+            but these are just a few. 🥺
+          </p>
+          <div class="love-grid" id="love-grid" aria-label="Things I love about you"></div>
+          <nav class="chapter-nav" aria-label="Chapter navigation">
+            <button class="chapter-nav__button chapter-nav__button--previous" type="button" data-chapter-target="memories">← Our Memories</button>
+            <span class="chapter-nav__heart" aria-hidden="true">💕</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="sorry">Read My Heart ❤️ →</button>
+          </nav>
+        </div>
+      </section>
+
+      <section class="apology-section" id="sorry" aria-labelledby="apology-title">
+        <div class="apology-section__glow apology-section__glow--one" aria-hidden="true"></div>
+        <div class="apology-section__glow apology-section__glow--two" aria-hidden="true"></div>
+        <span class="apology-decoration apology-decoration--heart-one" aria-hidden="true">♡</span>
+        <span class="apology-decoration apology-decoration--heart-two" aria-hidden="true">♥</span>
+        <span class="apology-decoration apology-decoration--sparkle-one" aria-hidden="true">✧</span>
+        <span class="apology-decoration apology-decoration--sparkle-two" aria-hidden="true">✦</span>
+        <span class="apology-decoration apology-decoration--rose" aria-hidden="true">🌹</span>
+
+        <div class="apology-section__content">
+          <p class="apology-section__eyebrow">FROM MY HEART ❤️</p>
+          <h2 class="apology-section__title" id="apology-title">Something I Need To Say... 🥺</h2>
+          <p class="apology-section__subtitle">I know I haven't always been perfect...</p>
+
+          <div class="apology-letter-stage">
+            <button
+              class="envelope-trigger"
+              id="open-letter"
+              type="button"
+              aria-expanded="false"
+              aria-controls="apology-letter"
+            >
+              <span class="envelope-trigger__glow" aria-hidden="true"></span>
+              <span class="envelope-trigger__letter" aria-hidden="true">❤️</span>
+              <span class="envelope-trigger__back" aria-hidden="true"></span>
+              <span class="envelope-trigger__flap" aria-hidden="true"></span>
+              <span class="envelope-trigger__front" aria-hidden="true"></span>
+              <span class="envelope-trigger__bow" aria-hidden="true">🎀</span>
+              <span class="envelope-trigger__label">Open My Letter 💌</span>
+              <span class="envelope-trigger__sparkle" aria-hidden="true">✧</span>
+            </button>
+
+            <article class="apology-letter" id="apology-letter" aria-hidden="true">
+              <span class="apology-letter__rose" aria-hidden="true">🌹</span>
+              <span class="apology-letter__heart" aria-hidden="true">❤️</span>
+              <span class="apology-letter__bow" aria-hidden="true">🎀</span>
+              <div class="apology-letter__body">
+                <p>Hey...</p>
+                <p>I know I have made mistakes.</p>
+                <p>I know sometimes my words or my actions may have hurt you.</p>
+                <p>And honestly, I'm truly sorry.</p>
+                <p>I never wanted to be the reason behind your sadness.</p>
+                <p>I may not always be perfect, and sometimes I may not know how to express what I feel, but one thing I know for sure...</p>
+                <p>You are very special to me.</p>
+                <p>I'm sorry for every moment when I made you feel bad, for every misunderstanding, and for every time I failed to make you smile.</p>
+                <p>I don't want one bad moment to become bigger than all the beautiful moments we have shared.</p>
+                <p>I'm not asking you to forget everything.</p>
+                <p>I just want you to know that I understand my mistakes, and I genuinely want to become better.</p>
+                <p>So today, from my heart...</p>
+                <p class="apology-letter__emphasis">I'm Sorry. ❤️</p>
+                <p>And I promise I'll keep trying to become a better version of myself.</p>
+                <p>Because you matter to me more than my ego ever could.</p>
+                <p class="apology-letter__signoff">With Love,<br />Your Man ❤️</p>
+              </div>
+
+              <div class="forgiveness">
+                <button class="forgiveness__button" id="forgive-button" type="button">
+                  Can You Forgive Me? 🥺❤️
+                </button>
+                <div class="forgiveness__response" id="forgiveness-response" aria-live="polite" hidden>
+                  <p>Thank You For Understanding ❤️</p>
+                  <span>I'll keep trying to make you smile. 🥺</span>
+                </div>
+                <div class="forgiveness__confetti" aria-hidden="true"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="proposal-section" id="one-more-question" aria-labelledby="proposal-title">
+        <div class="proposal-section__glow proposal-section__glow--one" aria-hidden="true"></div>
+        <div class="proposal-section__glow proposal-section__glow--two" aria-hidden="true"></div>
+        <div class="proposal-celebration-glow" aria-hidden="true"></div>
+        <span class="proposal-decoration proposal-decoration--heart-one" aria-hidden="true">♡</span>
+        <span class="proposal-decoration proposal-decoration--heart-two" aria-hidden="true">♥</span>
+        <span class="proposal-decoration proposal-decoration--sparkle-one" aria-hidden="true">✧</span>
+        <span class="proposal-decoration proposal-decoration--sparkle-two" aria-hidden="true">✦</span>
+        <span class="proposal-decoration proposal-decoration--rose-one" aria-hidden="true">🌹</span>
+        <span class="proposal-decoration proposal-decoration--rose-two" aria-hidden="true">🌹</span>
+        <span class="proposal-decoration proposal-decoration--heart-glow" aria-hidden="true">♥</span>
+
+        <div class="proposal-particles" aria-hidden="true"></div>
+        <div class="proposal-section__content">
+          <p class="proposal-section__eyebrow">AFTER EVERYTHING... ❤️</p>
+          <h2 class="proposal-section__title" id="proposal-title">One More Question...</h2>
+          <p class="proposal-section__subtitle">I know we already became us...</p>
+
+          <div class="proposal-preamble">
+            <p class="proposal-preamble__line">But if I got the chance to choose again...</p>
+            <p class="proposal-preamble__choice">I would still choose YOU. ❤️</p>
+            <p class="proposal-preamble__ending">Every single time.</p>
+          </div>
+
+          <article class="proposal-card">
+            <span class="proposal-card__sparkle" aria-hidden="true">✧</span>
+            <span class="proposal-card__heart" aria-hidden="true">♡</span>
+            <p class="proposal-card__eyebrow">A promise for all the moments ahead</p>
+            <h3 class="proposal-card__title">Will You Be Mine... Again? 💍❤️</h3>
+            <p class="proposal-card__intro">
+              Not because I need another beginning...<br />
+              but because I want a thousand more moments with you.
+            </p>
+            <p class="proposal-card__moments">
+              More laughs.<br />
+              More memories.<br />
+              More silly fights.<br />
+              More late-night talks.<br />
+              More everything.
+            </p>
+            <p class="proposal-card__together">With YOU. ❤️</p>
+            <div class="proposal-card__buttons">
+              <button class="proposal-button proposal-button--yes" type="button">
+                YES, ALWAYS ❤️
+              </button>
+              <button class="proposal-button proposal-button--of-course" type="button">
+                OF COURSE 🥺💜
+              </button>
+            </div>
+          </article>
+
+          <div class="proposal-celebration" aria-live="polite" aria-hidden="true">
+            <p class="proposal-celebration__title">YAYYYYY! ❤️🥺</p>
+            <p class="proposal-celebration__message">Then let's make the next chapter even more beautiful.</p>
+            <p class="proposal-celebration__promise">
+              One month down...<br />
+              A lifetime of memories to go. 💜
+            </p>
+            <p class="proposal-celebration__signoff">Happy 1 Month, My Love ❤️</p>
+          </div>
+          <nav class="chapter-nav" aria-label="Chapter navigation">
+            <button class="chapter-nav__button chapter-nav__button--previous" type="button" data-chapter-target="sorry">← Sorry Letter</button>
+            <span class="chapter-nav__heart" aria-hidden="true">💕</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="music">Listen To Our Song 🎵 →</button>
+          </nav>
+        </div>
+
+        <span class="proposal-party-decoration proposal-party-decoration--teddy" aria-hidden="true">🧸</span>
+        <span class="proposal-party-decoration proposal-party-decoration--rose" aria-hidden="true">🌹</span>
+        <span class="proposal-party-decoration proposal-party-decoration--sparkle" aria-hidden="true">✨</span>
+      </section>
+
+      <section class="music-section" id="music" aria-labelledby="music-title">
+        <div class="music-section__glow music-section__glow--one" aria-hidden="true"></div>
+        <div class="music-section__glow music-section__glow--two" aria-hidden="true"></div>
+        <span class="music-decoration music-decoration--heart" aria-hidden="true">♡</span>
+        <span class="music-decoration music-decoration--sparkle" aria-hidden="true">✧</span>
+        <span class="music-decoration music-decoration--rose" aria-hidden="true">🌹</span>
+
+        <div class="music-section__content">
+          <p class="music-section__eyebrow">A LITTLE MUSIC FOR US 🎵</p>
+          <h2 class="music-section__title" id="music-title">Our Little Soundtrack <span aria-hidden="true">❤️</span></h2>
+          <p class="music-section__subtitle">
+            Some songs sound different when they remind you of someone special.
+          </p>
+
+          <div class="music-layout">
+            <article class="music-player" aria-label="Music player">
+              <div class="music-player__artwork-wrap">
+                <div class="music-player__artwork" id="album-artwork" aria-hidden="true">
+                  <span class="music-player__artwork-glow"></span>
+                  <span class="music-player__artwork-heart">♥</span>
+                  <span class="music-player__artwork-note">♫</span>
+                  <span class="music-player__artwork-sparkle">✦</span>
+                </div>
+                <span class="music-note music-note--one" aria-hidden="true">♪</span>
+                <span class="music-note music-note--two" aria-hidden="true">♫</span>
+                <span class="music-note music-note--three" aria-hidden="true">♪</span>
+              </div>
+
+              <div class="music-player__track">
+                <p class="music-player__eyebrow">NOW PLAYING</p>
+                <h3 class="music-player__title" id="song-title">Choose a song for us ❤️</h3>
+                <p class="music-player__artist" id="song-artist"></p>
+              </div>
+
+              <p class="music-player__status" id="music-status" role="status" aria-live="polite"></p>
+
+              <div class="music-progress">
+                <input
+                  class="music-progress__range"
+                  id="progress-bar"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="0"
+                  aria-label="Song progress"
+                />
+                <div class="music-progress__times">
+                  <span id="current-time">0:00</span>
+                  <span id="duration">0:00</span>
+                </div>
+              </div>
+
+              <div class="music-controls">
+                <button class="music-control" id="previous-song" type="button" aria-label="Previous song">⏮</button>
+                <button class="music-control music-control--play" id="play-pause" type="button" aria-label="Play music">▶</button>
+                <button class="music-control" id="next-song" type="button" aria-label="Next song">⏭</button>
+              </div>
+
+              <div class="music-volume">
+                <button class="music-volume__mute" id="mute-button" type="button" aria-label="Mute">🔊</button>
+                <input
+                  class="music-volume__range"
+                  id="volume-slider"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.01"
+                  value="0.75"
+                  aria-label="Volume"
+                />
+              </div>
+            </article>
+
+            <section class="music-playlist" aria-labelledby="playlist-title">
+              <div class="music-playlist__heading">
+                <div>
+                  <p class="music-playlist__eyebrow">OUR LITTLE PLAYLIST</p>
+                  <h3 id="playlist-title">Songs for us</h3>
+                </div>
+                <div class="music-playlist__heading-actions">
+                  <button class="music-playlist__add" id="add-song-button" type="button">＋ Add Your Song ❤️</button>
+                  <span aria-hidden="true">💜</span>
+                </div>
+              </div>
+              <ol class="music-playlist__items" id="playlist-items"></ol>
+            </section>
+          </div>
+          <dialog class="music-upload" id="music-upload-dialog" aria-labelledby="music-upload-title">
+            <form class="music-upload__card" id="music-upload-form">
+              <p class="music-upload__eyebrow">A SONG JUST FOR US 🎵</p>
+              <h2 class="music-upload__title" id="music-upload-title">Add Your Song ❤️</h2>
+              <label class="music-upload__label" for="upload-song-title">Song Name</label>
+              <input
+                class="music-upload__input"
+                id="upload-song-title"
+                name="title"
+                type="text"
+                maxlength="100"
+                placeholder="Give your song a name"
+                required
+              />
+              <label class="music-upload__label" for="upload-song-subtitle">Subtitle <span>(optional)</span></label>
+              <input
+                class="music-upload__input"
+                id="upload-song-subtitle"
+                name="subtitle"
+                type="text"
+                maxlength="100"
+                placeholder="A little note about this song"
+              />
+              <label class="music-upload__label" for="upload-song-file">Choose Audio File</label>
+              <input
+                class="music-upload__file"
+                id="upload-song-file"
+                name="audio"
+                type="file"
+                accept="audio/*,.mp3,.mp3.mpeg,.mpeg,.m4a,.aac,.ogg,.wav,.flac,.opus,.aiff,.wma"
+              />
+              <p class="music-upload__status" id="music-upload-status" role="status" aria-live="polite"></p>
+              <div class="music-upload__actions">
+                <button class="music-upload__submit" type="submit">Add Song ❤️</button>
+                <button class="music-upload__cancel" id="cancel-song-upload" type="button">Cancel</button>
+              </div>
+            </form>
+          </dialog>
+          <dialog class="music-upload" id="remove-song-dialog" aria-labelledby="remove-song-title">
+            <div class="music-upload__card">
+              <p class="music-upload__eyebrow">A LITTLE PLAYLIST CHANGE 💜</p>
+              <h2 class="music-upload__title" id="remove-song-title">Remove this song from our story? ❤️</h2>
+              <p class="music-upload__status" id="remove-song-name"></p>
+              <div class="music-upload__actions">
+                <button class="music-upload__submit" id="confirm-remove-song" type="button">Remove</button>
+                <button class="music-upload__cancel" id="cancel-remove-song" type="button">Cancel</button>
+              </div>
+            </div>
+          </dialog>
+          <nav class="chapter-nav" aria-label="Chapter navigation">
+            <button class="chapter-nav__button chapter-nav__button--previous" type="button" data-chapter-target="sorry">← My Letter</button>
+            <span class="chapter-nav__heart" aria-hidden="true">💕</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="promises">Promises I Want To Keep 💜 →</button>
+          </nav>
+        </div>
+      </section>
+
+      <section class="promises-section" id="promises" aria-labelledby="promises-title">
+        <div class="promises-section__glow promises-section__glow--one" aria-hidden="true"></div>
+        <div class="promises-section__glow promises-section__glow--two" aria-hidden="true"></div>
+        <span class="promises-decoration promises-decoration--heart-one" aria-hidden="true">♡</span>
+        <span class="promises-decoration promises-decoration--heart-two" aria-hidden="true">♥</span>
+        <span class="promises-decoration promises-decoration--sparkle-one" aria-hidden="true">✧</span>
+        <span class="promises-decoration promises-decoration--sparkle-two" aria-hidden="true">✦</span>
+        <span class="promises-decoration promises-decoration--rose-one" aria-hidden="true">🌹</span>
+        <span class="promises-decoration promises-decoration--flower" aria-hidden="true">🌸</span>
+
+        <div class="promises-section__content">
+          <p class="promises-section__eyebrow">NOT JUST WORDS... 💜</p>
+          <h2 class="promises-section__title" id="promises-title">Promises I Want To Keep <span aria-hidden="true">❤️</span></h2>
+          <p class="promises-section__subtitle">
+            I don't promise that everything will always be perfect...
+          </p>
+          <p class="promises-section__reassurance">But I promise I'll always keep choosing us. ❤️</p>
+
+          <div class="promises-grid" id="promises-grid" aria-label="Promises I want to keep"></div>
+
+          <button class="promises-cta" id="make-promise" type="button">
+            Make A Promise With Me ❤️
+          </button>
+          <nav class="chapter-nav" aria-label="Chapter navigation">
+            <button class="chapter-nav__button chapter-nav__button--previous" type="button" data-chapter-target="music">← Our Soundtrack</button>
+            <span class="chapter-nav__heart" aria-hidden="true">💕</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="proposal">One More Question 💍 →</button>
+          </nav>
+        </div>
+        <div class="promises-particles" aria-hidden="true"></div>
+      </section>
+
+      <div
+        class="promise-modal"
+        id="promise-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="promise-modal-title"
+        aria-describedby="promise-modal-message"
+        aria-hidden="true"
+      >
+        <div class="promise-modal__card">
+          <button class="promise-modal__close" id="promise-modal-close" type="button" aria-label="Close promise">✕</button>
+          <span class="promise-modal__decoration promise-modal__decoration--heart" aria-hidden="true">❤️</span>
+          <span class="promise-modal__decoration promise-modal__decoration--sparkle" aria-hidden="true">✧</span>
+          <p class="promise-modal__eyebrow">A little promise, from us</p>
+          <h2 id="promise-modal-title">Then let's promise each other one thing...</h2>
+          <p class="promise-modal__message" id="promise-modal-message">
+            No matter how many chapters life gives us,<br />
+            let's keep making our story beautiful. ❤️
+          </p>
+          <button class="promise-modal__accept" id="promise-accept" type="button">I Promise 🥺💜</button>
+          <div class="promise-modal__response" id="promise-response" aria-live="polite" hidden>
+            <p>Promise made. ❤️</p>
+            <span>Now let's make the next chapter even more beautiful.</span>
+          </div>
+          <div class="promise-modal__particles" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <section class="reproposal-section" id="proposal" aria-labelledby="reproposal-title">
+        <div class="reproposal-section__glow reproposal-section__glow--one" aria-hidden="true"></div>
+        <div class="reproposal-section__glow reproposal-section__glow--two" aria-hidden="true"></div>
+        <div class="reproposal-section__stars" aria-hidden="true"></div>
+        <span class="reproposal-decoration reproposal-decoration--heart" aria-hidden="true">💕</span>
+        <span class="reproposal-decoration reproposal-decoration--rose" aria-hidden="true">🌹</span>
+        <span class="reproposal-decoration reproposal-decoration--butterfly" aria-hidden="true">🦋</span>
+        <span class="reproposal-decoration reproposal-decoration--sparkle-one" aria-hidden="true">✨</span>
+        <span class="reproposal-decoration reproposal-decoration--sparkle-two" aria-hidden="true">✧</span>
+
+        <div class="reproposal-section__content">
+          <p class="reproposal-section__eyebrow">ONE MORE QUESTION... 💌</p>
+          <h2 class="reproposal-section__title" id="reproposal-title">Can I Ask You Something?</h2>
+          <p class="reproposal-section__subtitle">
+            One month ago, you became a beautiful part of my life...
+          </p>
+          <p class="reproposal-section__choose">Today, I want to choose you all over again. ❤️</p>
+
+          <div class="reproposal-ring" aria-hidden="true">💍</div>
+
+          <article class="reproposal-card">
+            <span class="reproposal-card__heart" aria-hidden="true">♡</span>
+            <div class="reproposal-card__message">
+              <p>Maybe I've already asked you once...</p>
+              <p>But some questions are worth asking again.</p>
+              <p>I don't want this to be just one beautiful month.</p>
+              <p>
+                I want more silly conversations,<br />
+                more late-night talks,<br />
+                more little fights,<br />
+                more apologies,<br />
+                more laughter,<br />
+                more memories...
+              </p>
+              <p>
+                And more moments where I look at you<br />
+                and think...
+              </p>
+              <p class="reproposal-card__lucky">How did I get so lucky? 🥺❤️</p>
+              <p class="reproposal-card__question-intro">So, after everything we've shared...</p>
+              <h3 class="reproposal-card__question" id="reproposal-question" aria-label="Will You Be Mine Again? 💍❤️">
+                <span aria-hidden="true"></span>
+              </h3>
+            </div>
+
+            <div class="reproposal-actions">
+              <button class="reproposal-button reproposal-button--yes" id="reproposal-yes" type="button">
+                YES, ALWAYS ❤️
+              </button>
+              <button class="reproposal-button reproposal-button--think" id="reproposal-think" type="button">
+                LET ME THINK 🥺
+              </button>
+            </div>
+
+            <div class="reproposal-think" id="reproposal-think-message" role="dialog" aria-labelledby="reproposal-think-title" hidden>
+              <p id="reproposal-think-title">Take your time... 🥺</p>
+              <p>But just so you know...</p>
+              <p>My heart is already waiting for your answer. ❤️</p>
+              <button class="reproposal-think__close" id="reproposal-think-close" type="button">
+                Okay, I'll think about it 💕
+              </button>
+            </div>
+          </article>
+          <nav class="chapter-nav" aria-label="Chapter navigation">
+            <button class="chapter-nav__button chapter-nav__button--previous" type="button" data-chapter-target="promises">← Our Promises</button>
+            <span class="chapter-nav__heart" aria-hidden="true">💕</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="ending">See What's Next ✨ →</button>
+          </nav>
+        </div>
+      </section>
+
+      <div
+        class="reproposal-celebration"
+        id="reproposal-celebration"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="reproposal-celebration-title"
+        aria-hidden="true"
+      >
+        <div class="reproposal-celebration__particles" aria-hidden="true"></div>
+        <div class="reproposal-celebration__glow" aria-hidden="true"></div>
+        <div class="reproposal-celebration__content">
+          <button class="reproposal-celebration__close" id="reproposal-celebration-close" type="button" aria-label="Close celebration">
+            ✕
+          </button>
+          <span class="reproposal-celebration__ring" aria-hidden="true">💍</span>
+          <p class="reproposal-celebration__title" id="reproposal-celebration-title">She Said YES! ❤️</p>
+          <p class="reproposal-celebration__answer">Again... and hopefully forever. 🥺💍</p>
+          <p class="reproposal-celebration__chapter">One month down...</p>
+          <p class="reproposal-celebration__moments">Countless beautiful moments to go.</p>
+          <p class="reproposal-celebration__signoff">❤️ OUR STORY CONTINUES ❤️</p>
+        </div>
+      </div>
+
+      <section class="story-ending" id="ending" aria-labelledby="story-ending-title">
+        <div class="story-ending__glow story-ending__glow--one" aria-hidden="true"></div>
+        <div class="story-ending__glow story-ending__glow--two" aria-hidden="true"></div>
+        <span class="story-ending__decoration story-ending__decoration--heart" aria-hidden="true">❤️</span>
+        <span class="story-ending__decoration story-ending__decoration--hearts" aria-hidden="true">💕</span>
+        <span class="story-ending__decoration story-ending__decoration--sparkle-one" aria-hidden="true">✨</span>
+        <span class="story-ending__decoration story-ending__decoration--rose" aria-hidden="true">🌹</span>
+        <span class="story-ending__decoration story-ending__decoration--butterfly" aria-hidden="true">🦋</span>
+        <span class="story-ending__decoration story-ending__decoration--star" aria-hidden="true">⭐</span>
+
+        <div class="story-ending__content">
+          <header class="story-ending__intro">
+            <p class="story-ending__eyebrow">AND THIS IS ONLY THE BEGINNING ✨</p>
+            <h2 class="story-ending__title" id="story-ending-title">Our Story Continues... ❤️</h2>
+            <p class="story-ending__subtitle">One month was just the first chapter.</p>
+            <p class="story-ending__promise">There are still so many memories waiting for us.</p>
+          </header>
+
+          <article class="story-letter" aria-labelledby="story-letter-title">
+            <span class="story-letter__rose" aria-hidden="true">🌹</span>
+            <span class="story-letter__bow" aria-hidden="true">🎀</span>
+            <p class="story-letter__eyebrow">A NOTE TO KEEP</p>
+            <h3 id="story-letter-title" class="story-letter__title">One Last Little Letter 💌</h3>
+            <div class="story-letter__body">
+              <p class="story-letter__greeting" id="story-letter-greeting">Hey you... ❤️</p>
+              <p>If you've reached this far, I hope you know how much you mean to me.</p>
+              <p>This one month may seem small when compared to all the time in the world...</p>
+              <p>but every little moment with you has become something I'll always carry with me.</p>
+              <p class="story-letter__thanks">
+                Thank you for the smiles.<br />
+                Thank you for the conversations.<br />
+                Thank you for understanding me.<br />
+                Thank you for staying.<br />
+                Thank you for being you.
+              </p>
+              <p>I know I'm not perfect.</p>
+              <p>
+                I'll make mistakes.<br />
+                I'll sometimes say the wrong thing.<br />
+                We'll probably have silly arguments.
+              </p>
+              <p>
+                But through all of it, I want to keep learning,<br />
+                keep growing,<br />
+                keep saying sorry when I'm wrong,<br />
+                and keep choosing you.
+              </p>
+              <p>Because I don't want just one month with you.</p>
+              <p>I want all the little moments that come after it.</p>
+              <p class="story-letter__more">
+                More laughs.<br />
+                More memories.<br />
+                More late-night conversations.<br />
+                More silly fights.<br />
+                More apologies.<br />
+                More celebrations.<br />
+                More adventures.
+              </p>
+              <p>And hopefully...</p>
+              <p>
+                a lifetime of saying:<br />
+                <span class="story-letter__quote">'I'm glad I chose you.' ❤️</span>
+              </p>
+              <p>Happy One Month to us.</p>
+              <p>And here's to every chapter still waiting to be written.</p>
+              <p class="story-letter__signature">
+                With all my heart,<br />
+                <span id="story-letter-signature">Your Man ❤️</span>
+              </p>
+            </div>
+
+            <div class="story-details" aria-label="Our little story details">
+              <p class="story-details__heading">OUR LITTLE STORY</p>
+              <div class="story-details__items">
+                <p>❤️ Together Since: <time id="story-start-date"></time></p>
+                <p>💌 One Month Completed</p>
+                <p>♾️ More Chapters To Come</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="story-ending__actions">
+            <button class="story-ending__replay" id="replay-story" type="button">
+              Replay Our Story ❤️
+            </button>
+          </div>
+
+          <div class="story-surprise">
+            <p class="story-surprise__teaser">One Last Thing... 💜</p>
+            <button class="story-surprise__open" id="open-final-surprise" type="button" aria-expanded="false" aria-controls="final-surprise-message">
+              Open It 💌
+            </button>
+            <div class="story-surprise__message" id="final-surprise-message" aria-live="polite" hidden>
+              <p>Whatever happens next...</p>
+              <p>Just remember...</p>
+              <p>You will always have a very special place in my heart. ❤️</p>
+              <p>Thank you for being part of my story.</p>
+              <p>Now let's write the next chapter together. 💕</p>
+            </div>
+          </div>
+
+          <footer class="story-signature">
+            <p>Made with ❤️ for someone very special.</p>
+            <p>Forever starts with little moments.</p>
+            <div aria-hidden="true">❤️ ✨ 💕 ✨ ❤️</div>
+          </footer>
+          <nav class="chapter-nav chapter-nav--ending" aria-label="Chapter navigation">
+            <button class="chapter-nav__button chapter-nav__button--previous" type="button" data-chapter-target="proposal">← Re-Propose To Me</button>
+            <span class="chapter-nav__heart" aria-hidden="true">💕</span>
+            <button class="chapter-nav__button chapter-nav__button--next" type="button" data-chapter-target="hero">Back To The Beginning ❤️</button>
+          </nav>
+        </div>
+      </section>
+      <div class="story-toast" id="story-replay-toast" role="status" aria-live="polite" aria-hidden="true">
+        Let's experience our little story again. ❤️
+      </div>
+    </main>
+    <div class="chapter-dock" aria-hidden="true">
+      <button class="chapter-dock__toggle" id="chapter-dock-toggle" type="button" aria-label="Open chapter navigation" aria-expanded="false" aria-controls="chapter-dock-menu">
+        ❤️
+      </button>
+      <nav class="chapter-dock__menu" id="chapter-dock-menu" aria-label="Navigate to a chapter" aria-hidden="true">
+        <a href="#hero" data-chapter-target="hero">🏠 Beginning</a>
+        <a href="#one-month" data-chapter-target="one-month">❤️ One Month</a>
+        <a href="#memories" data-chapter-target="memories">📸 Memories</a>
+        <a href="#love" data-chapter-target="love">💕 Things I Love</a>
+        <a href="#sorry" data-chapter-target="sorry">💌 Sorry Letter</a>
+        <a href="#music" data-chapter-target="music">🎵 Music</a>
+        <a href="#promises" data-chapter-target="promises">💜 Promises</a>
+        <a href="#proposal" data-chapter-target="proposal">💍 Re-Proposal</a>
+        <a href="#ending" data-chapter-target="ending">✨ Our Story</a>
+      </nav>
+    </div>
+  </body>
+</html>
